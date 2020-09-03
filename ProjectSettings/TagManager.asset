@@ -3,7 +3,23 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - Canvas
+  - Rayo
+  - Balloon
+  - 1
+  - 2
+  - 3
+  - GameManager
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
@@ -13,12 +29,12 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Obstacle
+  - Rayo
+  - Enemie
+  - Barrera
+  - Player
+  - Planets
   - 
   - 
   - 

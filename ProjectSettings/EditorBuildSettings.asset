@@ -4,5 +4,38 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: Assets/ScenesTest/CM/CMScene.unity
+    guid: 0ace3a9a1e85b5642b93737d57409eba
+  - enabled: 0
+    path: Assets/ScenesTest/CM/CMScene.unity
+    guid: 0ace3a9a1e85b5642b93737d57409eba
+  - enabled: 0
+    path: Assets/ScenesTest/ARZ/ARZ Testing.unity
+    guid: 3148bb740244a974dbdb33530382900a
+  - enabled: 0
+    path: Assets/ScenesTest/AnnitaST.unity
+    guid: f7a9bdadabbadd44db13c6dde63b5b8d
+  - enabled: 0
+    path: Assets/ScenesTest/ScenesCR/Merge5Test.unity
+    guid: 5589c6c58c8ab974d9671db087a463f7
+  - enabled: 1
+    path: Assets/Scenes/ProvitionalMenu.unity
+    guid: 8639ac7371fe0c0428bcaf7d27417377
+  - enabled: 1
+    path: Assets/Scenes/Level CompleteWithBonus.unity
+    guid: 566ecfa5e7484784ba67f1537c34bef8
+  - enabled: 1
+    path: Assets/ScenesTest/AE/Win.unity
+    guid: 3e499d7973cab0244983815bc8c16816
+  - enabled: 1
+    path: Assets/ScenesTest/AE/GameOver.unity
+    guid: 459f0ebb339fdf94db3b2c9a2bb114da
+  - enabled: 0
+    path: Assets/Scenes/Level Complete nivel bonus08.09.unity
+    guid: 94a6e4725bcf8bf4981d7859e4c3d2e4
+  - enabled: 0
+    path: Assets/Scenes/Level Complete 1108.unity
+    guid: c67d79595e84c9542979b7d7da95c48c
   m_configObjects: {}
