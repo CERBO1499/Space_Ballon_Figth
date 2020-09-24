@@ -48,9 +48,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _lvlType: 1
   enemies:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 5356084733402190315}
+  - {fileID: 5356084731559159080}
+  - {fileID: 5356084732317667826}
 --- !u!1001 &1152798748735881434
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -120,6 +120,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1129f7fa8edb9964e9fda181c06ef06d, type: 3}
+--- !u!1 &5356084733402190315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5020162239005348145, guid: 1129f7fa8edb9964e9fda181c06ef06d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1152798748735881434}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5356084733402190314 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5020162239005348144, guid: 1129f7fa8edb9964e9fda181c06ef06d,
@@ -195,6 +201,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1129f7fa8edb9964e9fda181c06ef06d, type: 3}
+--- !u!1 &5356084731559159080 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5020162239005348145, guid: 1129f7fa8edb9964e9fda181c06ef06d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1152798749505123353}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5356084731559159081 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5020162239005348144, guid: 1129f7fa8edb9964e9fda181c06ef06d,
@@ -270,6 +282,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1129f7fa8edb9964e9fda181c06ef06d, type: 3}
+--- !u!1 &5356084732317667826 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5020162239005348145, guid: 1129f7fa8edb9964e9fda181c06ef06d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1152798749778395331}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5356084732317667827 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5020162239005348144, guid: 1129f7fa8edb9964e9fda181c06ef06d,

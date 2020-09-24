@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,43 +11,35 @@ public class sceneManagerMenu : MonoBehaviour
 {
     AudioSource audio;
     Manager manager;
+    [SerializeField] GameObject panelSelectornivel;
     
     private void Start() {
+
+       
         audio=GetComponent<AudioSource>();
         // manager = GameObject.Find("GameManager").GetComponent<Manager>();          
     }
     public void PlayGame(){
 
+        if (!PlayerPrefs.HasKey("FirstTime"))
+        {
+            SceneManager.LoadScene("CMCompleteWorld",LoadSceneMode.Single);
+        }
+        else
+        {
+            panelSelectornivel.SetActive(true);
+        }
+       
         audio.Play();
-        SceneManager.LoadScene("Level CompleteWithBonus",LoadSceneMode.Single);
+        // SceneManager.LoadScene("CMCompleteWorld",LoadSceneMode.Single);
     }
-    public void Level1(){
-
-        audio.Play();
-        SceneManager.LoadScene("Level CompleteWithBonus",LoadSceneMode.Single);
-        // manager.CurrentLevel=
-        PlayerPrefs.GetInt("CurrentLevel");
-        
+    
+    public void ClosePanelSelectorLevel()
+    {
+        panelSelectornivel.SetActive(false);
     }
-    public void Level2(){
-
-        audio.Play();
-        SceneManager.LoadScene("Level CompleteWithBonus",LoadSceneMode.Single);
-        // manager.CurrentLevel=
-        PlayerPrefs.GetInt("CurrentLevel");
-
-    }
-    public void level3(){
-
-        audio.Play();
-        SceneManager.LoadScene("Level CompleteWithBonus",LoadSceneMode.Single);
-        // manager.CurrentLevel=
-        PlayerPrefs.GetInt("CurrentLevel");
-
-    }
-
     public void GoToMenu(){
-         audio.Play();
-        // SceneManager.LoadScene("ProvitionalMenu");
+        audio.Play();
+        SceneManager.LoadScene("CMProvitionalMenu");
     }
 }

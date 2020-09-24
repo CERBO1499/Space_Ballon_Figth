@@ -16,21 +16,21 @@ public class EnemieType : MonoBehaviour
         switch (_enemies)
         {
             case Eenemie.Basico:
-            enemiIA.DistanceToActiveFindPlayer=3f;
-            enemiIA.Speed=400;
-            enemiIA.NextWayPointDistance=1f;
-            //print("este es el basico");
-            break;
-            case Eenemie.Medio:
-            enemiIA.DistanceToActiveFindPlayer=4f;
-            enemiIA.Speed=700f;
-            enemiIA.NextWayPointDistance=1.2f;
-            //print("Este es el medio");
-            break;
-            case Eenemie.Alto:
             enemiIA.DistanceToActiveFindPlayer=5f;
             enemiIA.Speed=800f;
             enemiIA.NextWayPointDistance=3f;
+            //print("este es el basico");
+            break;
+            case Eenemie.Medio:
+            enemiIA.DistanceToActiveFindPlayer=6f;
+            enemiIA.Speed=900f;
+            enemiIA.NextWayPointDistance=4f;
+            //print("Este es el medio");
+            break;
+            case Eenemie.Alto:
+            enemiIA.DistanceToActiveFindPlayer=7f;
+            enemiIA.Speed=1100f;
+            enemiIA.NextWayPointDistance=5f;
             //print("este es el alto");
             break;
             

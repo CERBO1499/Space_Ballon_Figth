@@ -13,6 +13,7 @@ public class EnemyLife : MonoBehaviour
 
 
     [SerializeField] private int lifes;
+    [SerializeField] ParticleSystem pop;
     private bool ballTrue = true;
     
     private EnemyHurt enemyHurt;
@@ -70,6 +71,7 @@ public class EnemyLife : MonoBehaviour
         ball.SetActive(false);
         enemyHurt.enemyHurtFalling();
         aud.clip=clips[0];
+        pop.Play();
         aud.Play();             
         
             switch (enemyType._enemies)
@@ -177,5 +179,10 @@ public class EnemyLife : MonoBehaviour
 
         cmVirtualCameraNOISE.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain= 0f;
 
+    }
+
+    private IEnumerator WaitForParticles(float time)
+    {
+        yield return new WaitForSeconds(time);
     }
 }

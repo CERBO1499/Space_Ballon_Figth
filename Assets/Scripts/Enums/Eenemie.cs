@@ -19,7 +19,18 @@ namespace Enums{
         siete,
         ocho,
         nueve,
-        diez
+        diez,
+        once,
+        doce,
+        trece,
+        catorce,
+        quince,
+        dieciseis,
+        diecisiete,
+        dieciocho,
+        diecinueve,
+        veinte,
+
       
         
     }

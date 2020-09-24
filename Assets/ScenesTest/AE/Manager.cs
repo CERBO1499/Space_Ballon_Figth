@@ -16,7 +16,8 @@ public class Manager : Singleton<Manager>
     [SerializeField] int currentLevel=1;
     [SerializeField] Checkpoint[] checkpoints;
     Vector3 spawnPoint;
-    [SerializeField] Transform[] spawners;    
+    [SerializeField] Transform[] spawners; 
+    [SerializeField] GameObject player;   
 
     public int CurrentLevel { get => currentLevel; set => currentLevel = value; }
     public Vector3 SpawnPoint { get => spawnPoint; set => spawnPoint = value; }
@@ -28,7 +29,13 @@ public class Manager : Singleton<Manager>
 
     //No borrar el override ni por el P****
     protected override void Awake(){
-                    
+       
+    }
+    private void Start() {
+        SpawnPoint=TrueGameManager.Instance.PosInicial;   
+      CurrentLevel=TrueGameManager.Instance.CurrentLevelGameManager;      
+
+      UpdatePlayerPos();    
     }
     void Update()
     {
@@ -36,22 +43,20 @@ public class Manager : Singleton<Manager>
         {
             UIController.Instance.Score=0;
             
-            SceneManager.LoadScene(winScene);
-            
+            SceneManager.LoadScene(winScene);            
             
             
         }
         else if (vidaJugador.Lives == 0)
         {
-            UIController.Instance.Score=0;
-            audio=GetComponent<AudioSource>();
-            audio.Play();
-            SceneManager.LoadScene(lossScene);
-            // MOD for player prefs
-            PlayerPrefs.SetInt("CurrentLevel",currentLevel);  
 
-    
             
+            UIController.Instance.Score=0;
+            audio=GetComponent<AudioSource>();            
+            // SceneManager.LoadScene("GameOver");
+            audio.Play();
+            // MOD for player prefs
+            // PlayerPrefs.SetInt("CurrentLevel",currentLevel);  
 
         }
         CheckPointManager();
@@ -85,4 +90,10 @@ public class Manager : Singleton<Manager>
             }
         }
     }
+
+   void UpdatePlayerPos(){
+
+       player.transform.Translate(spawnPoint);
+
+   }
 }

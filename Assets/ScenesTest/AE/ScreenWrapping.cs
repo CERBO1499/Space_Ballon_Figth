@@ -89,7 +89,7 @@ public class ScreenWrapping : MonoBehaviour
 
 		*/
 
-        if (screenPos.x > -0.11f * screenWidth && screenPos.x < screenWidth*(1.11f))
+        if (screenPos.x > -0.0f * screenWidth && screenPos.x < screenWidth*(1.0f))
         {
 			isWrappingX = false;
         }

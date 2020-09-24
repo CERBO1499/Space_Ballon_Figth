@@ -250,7 +250,7 @@ public class EnemiIA : MonoBehaviour
         // Vector3 randomScreenPos = new Vector3(rx, ry, 0f);
         // Vector3 inWorldPos = Camera.main.ScreenToWorldPoint(randomScreenPos);
         float xMinposRB=transform.position.x-2.5f;
-        print("Este es x rb" + xMinposRB);
+        // print("Este es x rb" + xMinposRB);
         float xMaxposRB=transform.position.x+2.5f;
         float yMinposRB=transform.position.y-2.5f;
         float yMaxposRB=transform.position.y+2.5f;
@@ -317,4 +317,6 @@ public class EnemiIA : MonoBehaviour
          
 
     }
+
+
 }

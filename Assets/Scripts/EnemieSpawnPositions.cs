@@ -187,6 +187,176 @@ public class EnemieSpawnPositions : MonoBehaviour
 
              }
             break;
+            case ElvlType.once:
+            enemies=GameObject.FindGameObjectsWithTag("11");
+            enemiIA=new EnemiIA[enemies.Length];
+
+             for (int i = 0; i < enemies.Length; i++)
+             {
+              enemiIA[i]=enemies[i].GetComponent<EnemiIA>();
+              enemiIA[i].minX=-7f;
+              enemiIA[i].maxX=7f;
+              enemiIA[i].minY=447f;
+              enemiIA[i].maxY=483f;
+
+
+                enemiIA[i].currentLvlEnemie=11;
+
+             }
+            break;
+            case ElvlType.doce:
+            enemies=GameObject.FindGameObjectsWithTag("12");
+            enemiIA=new EnemiIA[enemies.Length];
+
+             for (int i = 0; i < enemies.Length; i++)
+             {
+              enemiIA[i]=enemies[i].GetComponent<EnemiIA>();
+              enemiIA[i].minX=-7f;
+              enemiIA[i].maxX=7f;
+              enemiIA[i].minY=489f;
+              enemiIA[i].maxY=511f;
+
+
+                enemiIA[i].currentLvlEnemie=12;
+
+             }
+            break;
+            case ElvlType.trece:
+            enemies=GameObject.FindGameObjectsWithTag("13");
+            enemiIA=new EnemiIA[enemies.Length];
+
+             for (int i = 0; i < enemies.Length; i++)
+             {
+              enemiIA[i]=enemies[i].GetComponent<EnemiIA>();
+              enemiIA[i].minX=-7f;
+              enemiIA[i].maxX=7f;
+              enemiIA[i].minY=516f;
+              enemiIA[i].maxY=548f;
+
+
+                enemiIA[i].currentLvlEnemie=13;
+
+             }
+            break;
+            case ElvlType.catorce:
+            enemies=GameObject.FindGameObjectsWithTag("14");
+            enemiIA=new EnemiIA[enemies.Length];
+
+             for (int i = 0; i < enemies.Length; i++)
+             {
+              enemiIA[i]=enemies[i].GetComponent<EnemiIA>();
+              enemiIA[i].minX=-7f;
+              enemiIA[i].maxX=7f;
+              enemiIA[i].minY=553f;
+              enemiIA[i].maxY=583f;
+
+
+                enemiIA[i].currentLvlEnemie=14;
+
+             }
+            break;
+            case ElvlType.quince:
+            enemies=GameObject.FindGameObjectsWithTag("15");
+            enemiIA=new EnemiIA[enemies.Length];
+
+             for (int i = 0; i < enemies.Length; i++)
+             {
+              enemiIA[i]=enemies[i].GetComponent<EnemiIA>();
+              enemiIA[i].minX=-7f;
+              enemiIA[i].maxX=7f;
+              enemiIA[i].minY=590f;
+              enemiIA[i].maxY=629f;
+
+
+                enemiIA[i].currentLvlEnemie=15;
+
+             }
+            break;
+            case ElvlType.dieciseis:
+            enemies=GameObject.FindGameObjectsWithTag("16");
+            enemiIA=new EnemiIA[enemies.Length];
+
+             for (int i = 0; i < enemies.Length; i++)
+             {
+              enemiIA[i]=enemies[i].GetComponent<EnemiIA>();
+              enemiIA[i].minX=-7f;
+              enemiIA[i].maxX=7f;
+              enemiIA[i].minY=671f;
+              enemiIA[i].maxY=705.33f;
+
+
+                enemiIA[i].currentLvlEnemie=16;
+
+             }
+            break;
+            case ElvlType.diecisiete:
+            enemies=GameObject.FindGameObjectsWithTag("17");
+            enemiIA=new EnemiIA[enemies.Length];
+
+             for (int i = 0; i < enemies.Length; i++)
+             {
+              enemiIA[i]=enemies[i].GetComponent<EnemiIA>();
+              enemiIA[i].minX=-7f;
+              enemiIA[i].maxX=7f;
+              enemiIA[i].minY=710f;
+              enemiIA[i].maxY=741.35f;
+
+
+                enemiIA[i].currentLvlEnemie=17;
+
+             }
+            break;
+            case ElvlType.dieciocho:
+            enemies=GameObject.FindGameObjectsWithTag("18");
+            enemiIA=new EnemiIA[enemies.Length];
+
+             for (int i = 0; i < enemies.Length; i++)
+             {
+              enemiIA[i]=enemies[i].GetComponent<EnemiIA>();
+              enemiIA[i].minX=-7f;
+              enemiIA[i].maxX=7f;
+              enemiIA[i].minY=747f;
+              enemiIA[i].maxY=774f;
+
+
+                enemiIA[i].currentLvlEnemie=18;
+
+             }
+            break;
+            case ElvlType.diecinueve:
+            enemies=GameObject.FindGameObjectsWithTag("19");
+            enemiIA=new EnemiIA[enemies.Length];
+
+             for (int i = 0; i < enemies.Length; i++)
+             {
+              enemiIA[i]=enemies[i].GetComponent<EnemiIA>();
+              enemiIA[i].minX=-7f;
+              enemiIA[i].maxX=7f;
+              enemiIA[i].minY=780f;
+              enemiIA[i].maxY=821f;
+
+
+                enemiIA[i].currentLvlEnemie=19;
+
+             }
+            break;
+            case ElvlType.veinte:
+            enemies=GameObject.FindGameObjectsWithTag("20");
+            enemiIA=new EnemiIA[enemies.Length];
+
+             for (int i = 0; i < enemies.Length; i++)
+             {
+              enemiIA[i]=enemies[i].GetComponent<EnemiIA>();
+              enemiIA[i].minX=-7f;
+              enemiIA[i].maxX=7f;
+              enemiIA[i].minY=829f;
+              enemiIA[i].maxY=868.36f;
+
+
+                enemiIA[i].currentLvlEnemie=20;
+
+             }
+            break;
 
 
 

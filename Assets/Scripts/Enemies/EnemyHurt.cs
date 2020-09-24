@@ -17,12 +17,23 @@ EnemieType enemieType;
     private EnemyLife enemyLife; 
     private Rigidbody rbEnemy,rbenemyGFX;
     private ChangeMaterial changeMaterial;
+    private ChangeMaterialBeach changeMaterialBeach;
+    [SerializeField] private GameObject ChangeMaterialParentBeach;
 private void Start()
   {
     enemyLife=GetComponentInChildren<EnemyLife>();
     rbEnemy=GetComponent<Rigidbody>();  
-    enemieType=GetComponent<EnemieType>();
-    changeMaterial=GetComponentInChildren<ChangeMaterial>();
+    enemieType=GetComponent<EnemieType>();    
+     changeMaterial=GetComponentInChildren<ChangeMaterial>();
+
+
+    if(ChangeMaterialParentBeach!=null &&  ChangeMaterialParentBeach.name=="meshenemigoplaya"){
+      changeMaterialBeach=GetComponentInChildren<ChangeMaterialBeach>();
+
+    }else{
+      changeMaterialBeach=null;
+    }
+   
         
   }
  public void enemyResurrection()
@@ -37,8 +48,15 @@ private void Start()
     {
         case Eenemie.Basico:        
         enemieType._enemies=Eenemie.Medio;
-        enemieType.BeginEnemie();
-        changeMaterial.BeginEnemieMaterialType();
+        enemieType.BeginEnemie();      
+        if(ChangeMaterialParentBeach!=null &&  ChangeMaterialParentBeach.name=="meshenemigoplaya"){
+          changeMaterialBeach.BeginEnemieMaterialType2();
+        }  
+        else{
+          changeMaterial.BeginEnemieMaterialType();
+        }
+
+       
 
 
 
@@ -47,14 +65,26 @@ private void Start()
         case Eenemie.Medio:
         enemieType._enemies=Eenemie.Alto;
         enemieType.BeginEnemie();
-        changeMaterial.BeginEnemieMaterialType();
+        if(ChangeMaterialParentBeach!=null &&  ChangeMaterialParentBeach.name=="meshenemigoplaya"){
+          changeMaterialBeach.BeginEnemieMaterialType2();
+        }  
+        else{
+          changeMaterial.BeginEnemieMaterialType();
+        }
+
 
         break;
 
         case Eenemie.Alto:
         enemieType._enemies=Eenemie.Alto;
         enemieType.BeginEnemie();
-        changeMaterial.BeginEnemieMaterialType();
+       if(ChangeMaterialParentBeach!=null &&  ChangeMaterialParentBeach.name=="meshenemigoplaya"){
+          changeMaterialBeach.BeginEnemieMaterialType2();
+        }  
+        else{
+          changeMaterial.BeginEnemieMaterialType();
+        }
+
 
 
 

@@ -4,9 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Rigidbody))]
+//[RequireComponent(typeof(Rigidbody))]
 public class TouchMovement : MonoBehaviour
 {
+    [Range(0f, 1f)]
+    [SerializeField] float xTapForcePercent;
+
     [SerializeField] int lives; //This should get by PlayerLife...
 
     [SerializeField] float forceY, forceYTwoLives, forceYOneLive;
@@ -32,6 +35,10 @@ public class TouchMovement : MonoBehaviour
 
     [SerializeField]
     Transform centerPoint;
+
+    [SerializeField] ParticleSystem ps1;
+    [SerializeField] ParticleSystem ps2;
+
 
     public int Lives { get => lives; set => lives = value; }
 
@@ -104,6 +111,8 @@ public class TouchMovement : MonoBehaviour
             //Firs action when touch screen
             if (touch.phase == TouchPhase.Began)
             {
+                
+
                 if (touch.phase == TouchPhase.Began)
                 {
                     Vector3 touchWorldPos = Camera.main.ScreenToWorldPoint(touch.position);
@@ -126,17 +135,21 @@ public class TouchMovement : MonoBehaviour
 
                 Vector2 direction = touchWorldPos - transform.position;
 
+
                 //Left
                 if (touch.position.x < width / 2)
                 {
                     MovementX(Vector3.left);
+
                 }
                 //Right
                 if (touch.position.x > width / 2)
                 {
                     MovementX(Vector3.right);
+
                 }
             }
+            
         }
 
         #endregion
@@ -376,8 +389,17 @@ public class TouchMovement : MonoBehaviour
         velocity.x = 0f;
         rb.velocity = velocity;
 
+        direction.x *= xTapForcePercent;
+
         //rb.velocity = Vector3.zero;
         rb.AddForce(direction * forceY, ForceMode.Impulse);
+
+        //particles Andres
+        ps1.Play();
+        ps2.Play();
+        //Carlos MOD
+
+
     }
 
     public void JumpY()

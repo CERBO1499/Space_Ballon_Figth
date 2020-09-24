@@ -21,6 +21,10 @@ public class Checkpoint : MonoBehaviour
     public bool Pass { get => pass; set => pass = value; }
     public string Level { get => level; set => level = value; }
 
+    private AudioSource aud;
+
+    private GuardadoSerializado gSerializado;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +34,9 @@ public class Checkpoint : MonoBehaviour
         vcamBody = vcam.GetCinemachineComponent<CinemachineFramingTransposer>();
         deadZone = vcamBody.m_DeadZoneHeight;
         gManager = GameObject.Find("GameManager").GetComponent<Manager>();
+        aud=GetComponent<AudioSource>();
+        gSerializado=GameObject.Find("GUARDADOPARTIDA").GetComponent<GuardadoSerializado>();
+
         
      
 
@@ -49,6 +56,10 @@ public class Checkpoint : MonoBehaviour
             Pass = true; 
             //Debug.Log("Player Passed");
             gManager.CurrentLevel++;
+            
+            gSerializado.Guardar(Manager.Instance.CurrentLevel,Manager.Instance.SpawnPoint.x,Manager.Instance.SpawnPoint.y,Manager.Instance.SpawnPoint.z);
+            
+            aud.Play();
         }
         else if (player.transform.position.y < transform.position.y)
         {

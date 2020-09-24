@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 
-public class CMCameraResolutionFix : MonoBehaviour
+public class CMCameraResolutionFix : Singleton<CMCameraResolutionFix>
 {
     public SpriteRenderer spriteWidth;
 
-    void Start()
+    protected override void Awake()
     {
+        //Vector3 myVec = new Vector3(Screen.width, Screen.height, 0f);
+        //spriteWidth.bounds.size.x = myVec.x;
         //VERTICAL FIT
         //Camera.main.orthographicSize = spriteWidth.bounds.size.x * Screen.height / Screen.width * 0.5f;
         GetComponent<CinemachineVirtualCamera>().m_Lens.OrthographicSize = spriteWidth.bounds.size.x * Screen.height / Screen.width * 0.5f;

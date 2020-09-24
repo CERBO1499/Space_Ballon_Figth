@@ -9,10 +9,12 @@ public class PowerUp : MonoBehaviour
     [SerializeField] float timeEffect, timeSpawned;
     //[SerializeField] bool isPickUp;
     Coroutine coroutineA;
+    private AudioSource aud;
 
     private void Start()
     {
         coroutineA = StartCoroutine(ReleasePowerUp(timeSpawned));
+        aud = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -20,6 +22,7 @@ public class PowerUp : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             CollectPowerUp(other.gameObject);
+            aud.Play();
         }
     }
 

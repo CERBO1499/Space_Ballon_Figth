@@ -11,7 +11,7 @@ public class SpawnFish : MonoBehaviour
     private GameObject player;
     private Vector3 pos;
 
-    [SerializeField] private float currentLvlNube;
+    [SerializeField] float currentLvlNube;
 
     Manager manager;
 
@@ -46,9 +46,12 @@ public class SpawnFish : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            timecheck = true;
+            if(currentLvlNube == manager.CurrentLevel)
+            {
+                timecheck = true;
+            }              
         }
     }
     private void OnCollisionExit(Collision collision)
@@ -64,7 +67,10 @@ public class SpawnFish : MonoBehaviour
     {
         if (collider.CompareTag("Player"))
         {
-            timecheck = true;
+            if (currentLvlNube == manager.CurrentLevel)
+            {
+                timecheck = true;
+            }
         }
     }
 

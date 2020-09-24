@@ -48,9 +48,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _lvlType: 0
   enemies:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 6447337123674776965}
+  - {fileID: 6447337122878868542}
+  - {fileID: 6447337123174888603}
 --- !u!1001 &2076924692629599412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -120,6 +120,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1129f7fa8edb9964e9fda181c06ef06d, type: 3}
+--- !u!1 &6447337123674776965 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5020162239005348145, guid: 1129f7fa8edb9964e9fda181c06ef06d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2076924692629599412}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6447337123674776964 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5020162239005348144, guid: 1129f7fa8edb9964e9fda181c06ef06d,
@@ -133,6 +139,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2076924694002804971}
     m_Modifications:
+    - target: {fileID: 1051270381342209080, guid: 1129f7fa8edb9964e9fda181c06ef06d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d5ab28e53a2d4f647a58a26167689b63, type: 2}
+    - target: {fileID: 1682127223732294781, guid: 1129f7fa8edb9964e9fda181c06ef06d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d5ab28e53a2d4f647a58a26167689b63, type: 2}
+    - target: {fileID: 2132043977245441242, guid: 1129f7fa8edb9964e9fda181c06ef06d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d5ab28e53a2d4f647a58a26167689b63, type: 2}
     - target: {fileID: 5020162239005348144, guid: 1129f7fa8edb9964e9fda181c06ef06d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -193,8 +214,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: ENEMIFINALTEST (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5020162239039734803, guid: 1129f7fa8edb9964e9fda181c06ef06d,
+        type: 3}
+      propertyPath: cmVirtualCameraNOISE
+      value: 
+      objectReference: {fileID: 963508884410354912, guid: dc9d0470ae712ad4e88ba01ecba200a2,
+        type: 3}
+    - target: {fileID: 5554483884359546682, guid: 1129f7fa8edb9964e9fda181c06ef06d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d5ab28e53a2d4f647a58a26167689b63, type: 2}
+    - target: {fileID: 7436947455229017156, guid: 1129f7fa8edb9964e9fda181c06ef06d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d5ab28e53a2d4f647a58a26167689b63, type: 2}
+    - target: {fileID: 8448200683727408552, guid: 1129f7fa8edb9964e9fda181c06ef06d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d5ab28e53a2d4f647a58a26167689b63, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1129f7fa8edb9964e9fda181c06ef06d, type: 3}
+--- !u!1 &6447337123174888603 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5020162239005348145, guid: 1129f7fa8edb9964e9fda181c06ef06d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2076924694295569834}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6447337123174888602 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5020162239005348144, guid: 1129f7fa8edb9964e9fda181c06ef06d,
@@ -270,6 +318,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1129f7fa8edb9964e9fda181c06ef06d, type: 3}
+--- !u!1 &6447337122878868542 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5020162239005348145, guid: 1129f7fa8edb9964e9fda181c06ef06d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2076924694599834895}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6447337122878868543 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5020162239005348144, guid: 1129f7fa8edb9964e9fda181c06ef06d,
